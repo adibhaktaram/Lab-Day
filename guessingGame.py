@@ -8,13 +8,15 @@ def guessingGame():
         if (int(guess == rndNmbr)):
             print("You Win!")
             break
+        if (counter < numGuesses - 1):
+            print("Try Again")
+            counter += 1
+            if int(guess < rndNmbr):
+                print("Lower")
+            if int(guess < rndNmbr):
+                print("Higher")
         else:
-            if (int(guess < rndNmbr - 1)):
-                print("Try Again")
-            else:
-                print("You Lost!")
-                counter += 1
-
-
+            print("You Lost!")
+            break
 
 guessingGame()
