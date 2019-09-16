@@ -1,6 +1,12 @@
 import random
 import turtle
 def randomWalk(turtle, n):
+    a = black
+    b = blue
+    c = red
+    d = green
+    e = yellow
+    colorList =  "black, blue, red, green, yellow, orange, pink"
     for i in range(n):
         x = random.uniform(0,1)
         if(x <= 0.25):
